@@ -1,0 +1,51 @@
+*{
+    box-sizing: border-box;
+}
+.background{
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 625  60 625 60 px ;
+    
+}
+.text{
+    border: 1px solid blue;
+    border : none;
+    border-bottom: 1px solid;
+}
+.pw{
+    border: 1px solid blue;
+    border : none;
+    border-bottom: 1px solid;
+    
+}
+
+.loginform{
+    width:670px ;
+    height: 960px;
+    border-radius: 20px;
+    border-color: aqua ;
+    border : solid blue;
+    
+}
+.loginform_content{
+    margin-top: 72px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+.button{
+    width: 470px;
+    height: 75px;
+    border-radius:10px ;
+    border-color: blue;
+    background-color: white;
+}

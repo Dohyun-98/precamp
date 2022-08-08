@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./sign-up.css">
+    <script src="./sign-up.js"></script>
+</head>
+<body>
+    <div class="background">
+        <div class="wrapper">
+            <div class="wrapper_title">코드 캠프 회원가입</div>
+            <input  type="text" id="email" class="wrapper_input" placeholder=" 이메일을 입력해 주세요"> 
+            <input type="text" id="name" class="wrapper_input" placeholder=" 이름을 입력해 주세요">
+            <input type="text" id="pw1" class="wrapper_input" placeholder=" 비밀번호를 입력해 주세요">
+            <input type="text" id="pw2" class="wrapper_input" placeholder=" 비밀번호를 다시 입력해 주세요">
+            
+            <div class="wrapper_phonenumber">
+                <input type="text" id="ph1" class="phone_input" maxlength="3" oninput="focus1()">  
+                <div class="ph_line"></div> 
+                <input type="text" id="ph2" class="phone_input" maxlength="4" oninput="focus2()"> 
+                <div class="ph_line"></div>   
+                <input type="text" id="ph3" class="phone_input" maxlength="4" oninput="focus3()"> 
+            </div>
+            <div class="wrapper_ca">
+                <span id="js-canum1" class="canum">000000</span>
+                <button id="js-cabutton1" disabled="true" class="cabutton"  onclick="cabutton1()">인증번호 전송</button>
+            </div>
+            <div class="wrapper_ca">
+                <span id="js-canum2" class="canum">3:00</span>
+                <button id="js-cabutton2" class="cabutton" disabled="true" onclick="authsuccess()">인증 확인</button>
+            </div>
+            <select class="selectbox" id="area">
+                <option disabled="true" selected="true">지역을 선택하세요.</option>
+                <option>서울</option>
+                <option>경기</option>
+                <option>인천</option>
+            </select>
+            <div class="radiobox">
+                <div class="rdbox" >
+                <input class="rd" type="radio" name="gender" value="woman"><span>여성</span> 
+                </div> 
+                <div class="rdbox">
+                    <input class="rd" type="radio" name="gender" value="man"><span>남성</span>
+                    </div>
+            </div>
+            <div class="divideLine"></div>
+            <button id="signupbutton" class="signup-button" disabled="true" onclick="checkValidation()" >가입하기</button>
+        </div>
+    </div>
+</body>
+</html>
